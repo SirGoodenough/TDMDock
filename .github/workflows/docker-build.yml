@@ -4,6 +4,6 @@ jobs:
   build-image:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repo
+      - name: Build Docker Image
         uses: actions/checkout@v2
       - run: docker build . -t latest
