@@ -8,6 +8,7 @@ RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install wheel
 RUN python3 -m pip install pyqt5
 RUN python3 -m pip install setuptools
+RUN echo "Docker Build Done"
 
 # Install Tasmota Device Manager
 RUN pip3 install tdmgr
