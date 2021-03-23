@@ -1,0 +1,7 @@
+name: docker-build
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker build . -t latest
