@@ -3,6 +3,7 @@ FROM jlesage/baseimage-gui:debian-10
 RUN ln -s /usr/lib/x86_64-linux-gnu/libxcb-util.so.0.0.0 /usr/lib/x86_64-linux-gnu/libxcb-util.so.1
 
 RUN apt-get update && apt-get upgrade -y
+RUN apt-get install firefox-esr -y
 RUN add-pkg libqt5x11extras5 python3 python3-pip git -y --no-install-recommends
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install wheel
