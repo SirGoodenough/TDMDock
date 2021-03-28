@@ -7,6 +7,8 @@ https://hub.docker.com/r/marcelkordek/tasmota-device-manager
 
 I have added a few things to make it work better for general users.
 
+This basically puts TDMGR from (https://github.com/jziolkowski/tdm) into a local Docker container.  For more information on [TDMGR](https://github.com/jziolkowski/tdm) and [Tasmota](https://github.com/arendst/Tasmota), see those sites.  This **DOES NOT** modify [TDMGR](https://github.com/jziolkowski/tdm) or [Tasmota](https://github.com/arendst/Tasmota) in any way, it merely puts TDMGR into a Docker Container to help maintain your Tasmota Devices.  See Troubleshooting Section Below for more information regarding usage.
+
 ## Installation:
 
 * First install DockerCE and Docker Compose as stated on the Docker Website.  That installation is not covered here as it is out of scope.  
