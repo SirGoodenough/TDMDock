@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TDMGR Stop
+Comment=Stopping Docker Container
+Exec=docker-compose down
+Icon=/opt/TDM/TDMGR.png
+Path=/opt/TDM
+Terminal=true
+StartupNotify=false

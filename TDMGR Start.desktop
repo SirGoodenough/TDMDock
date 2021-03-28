@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TDMGR Start
+Comment=Starting Docker Container
+Exec=docker-compose up
+Icon=/opt/TDM/TDMGR.png
+Path=/opt/TDM
+Terminal=true
+StartupNotify=false
