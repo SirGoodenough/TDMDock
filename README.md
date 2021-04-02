@@ -1,4 +1,4 @@
-#  TDM
+#  TDMDock
 This is based on a docker compose I found from :
 https://zorruno.com/w/TDMDocker
 
