@@ -12,12 +12,12 @@ This basically puts TDMGR from (https://github.com/jziolkowski/tdm) into a local
 ## Installation:
 
 * First install DockerCE and Docker Compose as stated on the Docker Website.  That installation is not covered here as it is out of scope.  
-* Once that is installed, create a folder /opt/TDM and change the user and group on this folder /opt/TDM to be the [non-root user] that will be running the container on this computer.
+* Once that is installed, create a folder /opt/TDMDock and change the user and group on this folder /opt/TDMDock to be the [non-root user] that will be running the container on this computer.
 * Create a docker group if there isn’t one:  *sudo groupadd docker*
 * Add your user to the docker group:  *sudo usermod -aG docker [non-root user]*
 * Log out and log back in so that your group membership is re-evaluated.
 * Install all the files from the repository as your [non-root user] entity.
-* Inside /opt/TDM build the containers:  *sudo docker-compose build*
+* Inside /opt/TDMDock build the containers:  *sudo docker-compose build*
 * If you are using Ubuntu, copy the 2 xxx.desktop files to your [non-root user] entity's home folder.
 
 ## Container Start-up:
