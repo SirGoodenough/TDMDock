@@ -11,14 +11,38 @@ This basically puts TDMGR from (https://github.com/jziolkowski/tdm) into a local
 
 ## Installation:
 
-* First install DockerCE and Docker Compose as stated on the Docker Website.  That installation is not covered here as it is out of scope.  
+* First install DockerCE and Docker Compose as stated on the Docker Website.  That installation is not covered here.  
 * Once that is installed, create a folder /opt/TDMDock and change the user and group on this folder /opt/TDMDock to be the [non-root user] that will be running the container on this computer.
-* Create a docker group if there isn’t one:  *sudo groupadd docker*
-* Add your user to the docker group:  *sudo usermod -aG docker [non-root user]*
+```
+cd /opt
+sudo mkdir TDMDock
+sudo chown [non-root user] TDMDock
+sudo chgrp [non-root user] TDMDock
+```
+* Create a docker group if there isn’t one:  
+```
+sudo groupadd docker
+```
+* Add your user to the docker group:  
+```
+sudo usermod -aG docker [non-root user]
+```
 * Log out and log back in so that your group membership is re-evaluated.
-* Install all the files from the repository as your [non-root user] entity.
-* Inside /opt/TDMDock build the containers:  *sudo docker-compose build*
-* If you are using Ubuntu, copy the 2 xxx.desktop files to your [non-root user] entity's home folder.
+* Install all the files from the repository as your [non-root user] entity.  If you have git installed, you can use git clone:  
+```
+cd /opt; git clone https://github.com/SirGoodenough/TDMDock.git
+```
+* Find the file 'dockerfile' and with an appropriate editor that preserves format of the file,  fihd the time zone environmental variable and put your local timezone in there.  The default is US Central time where I am located.
+```
+# Environment Variables
+# see https://github.com/jlesage/docker-baseimage-gui/#environment-variables
+ENV TZ="America/Chicago"
+```
+* Inside /opt/TDMDock build the containers:  *
+```
+cd /opt/TDMDock; docker-compose build
+```
+* If you are using Ubuntu, copy the 2 xxx.desktop files to your [non-root user] entity's home folder.  This *MAY* also work with other Oinux Distros, but has not been tested.  Anyway you do it you will need to start the container during use and stop the container when not in use.
 
 ## Container Start-up:
 
