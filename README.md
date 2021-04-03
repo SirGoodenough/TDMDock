@@ -38,7 +38,7 @@ cd /opt; git clone https://github.com/SirGoodenough/TDMDock.git
 # see https://github.com/jlesage/docker-baseimage-gui/#environment-variables
 ENV TZ="America/Chicago"
 ```
-* Inside /opt/TDMDock build the containers:  *
+* Inside /opt/TDMDock build the containers:  
 ```
 cd /opt/TDMDock; docker-compose build
 ```
