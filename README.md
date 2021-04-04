@@ -46,7 +46,7 @@ cd /opt/TDMDock; docker-compose build
 
 ## Container Start-up:
 
-You should be able to start and stop the container now with these desktop icons.  It you wish to start and stop the containers another way that is up to you, but be aware that the TDMGR container **SHOULD NOT be left running all the time**.  It does put extra IO's on the little ESP chips in the Tasmota Devices and on some, it will cause ghost switching and device reboots.  It is best to load the container, do your business, then when you are done stop the container.  The Terminal window that pops up while the container is running is for troubleshooting and to remind you that the container is running, so that you remember to turn it off when done.
+Ubuntu users should be able to start and stop the container now with these desktop icons.  It you wish to start and stop the containers another way that is up to you, but be aware that the TDMDock container **SHOULD NOT be left running all the time**.  It does put extra IO's on the little ESP chips in the Tasmota Devices and on some, it will cause ghost switching and device reboots.  It is best to load the container, do your business, then when you are done stop the container.  The Terminal window that pops up while the container is running is for troubleshooting and to remind you that the container is running, so that you remember to turn it off when done using the container.
 
 ## TDMGR Usage:
 
@@ -54,18 +54,19 @@ To use TDMGR, start the container, then connect to (http://127.0.0.1:5810) thru 
 
 ## Troubleshooting and Warnings:
 
-If you have problems getting this to work correctly, you can put an issue here and contact me at my Discord and I will do my best to help you.  Be warned that TDMGR is intended to be run native and all testing is done on Ubuntu as per the [TDMGR Github](https://github.com/jziolkowski/tdm), so if you can't get it to run in this container, try it native on Ubuntu.  This set-up is for advanced users that can puzzle things out for themselves.
+If you have problems getting this to work correctly, you can contact me at my Discord and I will do my best to help you.  Be warned that TDMGR is intended to be run native and all testing is done on Ubuntu as per the [TDMGR Github](https://github.com/jziolkowski/tdm), so if you can't get it to run in this container, try it native on Ubuntu.  This set-up is for advanced users that can puzzle things out for themselves.  
 
 ## Thanks and Support
 
-If you have any questions, comments or additions be sure to add an issue and bring them up on my Discord Server: 
+If you have any questions, comments or additions be sure to add an issue and bring them up on my Discord Server.  If you feel there is an issue with the repo, please feel free to fork it and offer suggestions and / or put an issue in and contact me on Discord.
 
 ### Contact Links:
+
+* [Discord WhatAreWeFixingToday](https://discord.gg/Uhmhu3B)
 * [What are we Fixing Today Homepage](https://www.WhatAreWeFixing.Today/)
 * [YouYube Channel Link](https://bit.ly/WhatAreWeFixingTodaysYT)
 * [What are we Fixing Today Facebook page](https://bit.ly/WhatAreWeFixingTodayFB)
 * [What are we Fixing Today Twitter](https://bit.ly/WhatAreWeFixingTodayTW)
-* [Discord WhatAreWeFixingToday](https://discord.gg/Uhmhu3B)
 
 ### Please help support the channel:
 
