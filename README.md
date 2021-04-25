@@ -14,8 +14,11 @@ This basically puts TDMGR from (https://github.com/jziolkowski/tdm) into a local
 * First step is to install DockerCE and Docker Compose.  I'm not going to step by step that, rather refer you to other people that have covered that already.
 
 🐳 [Matheson Steplock: Install Docker on Ubuntu 20.04](https://mathesonsteplock.ca/install-docker-on-ubuntu-20-04/)
+
 🐳 [Install Docker Engine](https://docs.docker.com/engine/install/)
+
 🐳 [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
 🐳 [Install Docker Compose](https://docs.docker.com/compose/install/)
 
 * Once that is installed, create a folder /opt/TDMDock and change the user and group on this folder /opt/TDMDock to be the [non-root user] that will be running the container on this computer.
