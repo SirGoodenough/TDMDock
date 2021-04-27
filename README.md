@@ -21,23 +21,26 @@ This basically puts TDMGR from (https://github.com/jziolkowski/tdm) into a local
 
 🐳 [Install Docker Compose](https://docs.docker.com/compose/install/)
 
-* Once that is installed, create a folder /opt/TDMDock and change the user and group on this folder /opt/TDMDock to be the [non-root user] that will be running the container on this computer.
+* Once that is installed, create a folder /opt/TDMDock and change the user and group on this folder /opt/TDMDock to be the [non-root user's name] that will be running the container on this computer.
 ```
 cd /opt
 sudo mkdir TDMDock
-sudo chown [non-root user] TDMDock
-sudo chgrp [non-root user] TDMDock
+sudo chown [non-root user's name] TDMDock
+sudo chgrp [non-root user's name] TDMDock
 ```
 * Create a docker group if there isn’t one:  
 ```
 sudo groupadd docker
 ```
-* Add your user to the docker group:  
+* Add your [non-root user's name] to the docker group:  
 ```
-sudo usermod -aG docker [non-root user]
+sudo usermod -aG docker [non-root user's name]
 ```
-* Log out and log back in so that your group membership is re-evaluated.
-* Install all the files from the repository as your [non-root user] entity.  If you have git installed, you can use git clone:  
+* Log out and log back in or reboot your host computer so that the 'usermod' command above can take effect and your group membership is re-evaluated.:  
+```
+sudo reboot
+```
+* Install all the files from the repository as your [non-root user's name] entity.  If you have git installed, you can use git clone:  
 ```
 cd /opt; git clone https://github.com/SirGoodenough/TDMDock.git
 ```
@@ -55,11 +58,17 @@ cd /opt/TDMDock; docker-compose build
 
 ## Container Start-up:
 
-Ubuntu users should be able to start and stop the container now with these desktop icons.  It you wish to start and stop the containers another way that is up to you, but be aware that the TDMDock container **SHOULD NOT be left running all the time**.  It does put extra IO's on the little ESP chips in the Tasmota Devices and on some, it will cause ghost switching and device reboots.  It is best to load the container, do your business, then when you are done stop the container.  The Terminal window that pops up while the container is running is for troubleshooting and to remind you that the container is running, so that you remember to turn it off when done using the container.
+Ubuntu users should be able to start and stop the container now with these desktop icons listed as the *.desktop files in the repository.  It you wish to start and stop the containers another way that is up to you, but be aware that the TDMDock container **SHOULD NOT be left running all the time**.  It does put extra load on the little ESP chips in the Tasmota Devices and on some, it will cause ghost switching and device reboots.  It is best to load the container, do your business, then when you are done stop the container.  The Terminal window that pops up while the container is running is for troubleshooting and to remind you that the container is running, helping you remember to turn it off when done using the container.  
+
+The container can also be controlled by typing these in /opt/TDMDock and by myriad other ways:
+```
+docker-compose up
+docker-compose down
+```
 
 ## TDMGR Usage:
 
-To use TDMGR, start the container, then connect to (http://127.0.0.1:5810) thru your web browser.  You will need to connect to your broker and make sure your topics and stuff is set up correctly as per the [TDMGR Github](https://github.com/jziolkowski/tdm).  Once the topics are set, browser credentials are set, and you connect to the broker, your Tasmota devices should start showing up.
+To use TDMGR, start the container, then connect to (http://127.0.0.1:5810) thru your web browser.  You will need to connect TDMgr to your broker and make sure your topics and stuff is set up correctly as per the [TDMGR Github](https://github.com/jziolkowski/tdm).  Once the topics are set, browser credentials are set, and you connect to the broker, your Tasmota devices should start showing up.
 
 ## Troubleshooting and Warnings:
 
