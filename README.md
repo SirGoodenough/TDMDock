@@ -54,7 +54,7 @@ ENV TZ="America/Chicago"
 ```
 cd /opt/TDMDock; docker-compose build
 ```
-* If you are using Ubuntu, copy the 2 xxx.desktop files to your [non-root user] entity's home folder.  This *MAY* also work with other Oinux Distros, but has not been tested.  Anyway you do it you will need to start the container during use and stop the container when not in use.
+* If you are using Ubuntu, copy the 2 xxx.desktop files to your [non-root user] entity's home folder.  This *MAY* also work with other Linux Distros, but has not been tested.  Anyway you do it you will need to start the container during use and stop the container when not in use.
 
 ## Container Start-up:
 
