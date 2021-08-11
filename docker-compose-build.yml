@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  tasmota-device-manager:
+    build: .
+    volumes:
+      - "/dockervolumes/tasmota-device-manager/config:/config"
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/etc/timezone:/etc/timezone:ro"
+    ports:
+      - '5810:5800'
+      - '5910:5900'
+    container_name: tasmota-device-manager
+    hostname: tasmota-device-manager
+    restart: unless-stopped
