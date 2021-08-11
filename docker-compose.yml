@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   tasmota-device-manager:
-    build: .
+    image: ghcr.io/sirgoodenough/tdmdock:latest
     volumes:
       - "/dockervolumes/tasmota-device-manager/config:/config"
       - "/etc/localtime:/etc/localtime:ro"
