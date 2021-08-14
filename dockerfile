@@ -18,7 +18,7 @@ ENV APP_NAME="Tasmota Device Manager"
 
 # Environment Variables
 # see https://github.com/jlesage/docker-baseimage-gui/#environment-variables
-ENV TZ="America/Chicago"
+ENV TZ="UTC"
 
 # Copy the start script
 COPY startapp.sh /startapp.sh
