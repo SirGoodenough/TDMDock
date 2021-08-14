@@ -44,12 +44,6 @@ sudo reboot
 ```
 cd /opt; git clone https://github.com/SirGoodenough/TDMDock.git
 ```
-* Find the file 'dockerfile' and with an appropriate editor that preserves format of the file,  find the time zone environmental variable and put your local timezone in there.  The default is US Central time where I am located.
-```
-# Environment Variables
-# see https://github.com/jlesage/docker-baseimage-gui/#environment-variables
-ENV TZ="America/Chicago"
-```
 * Inside /opt/TDMDock build the containers:  
 ```
 cd /opt/TDMDock; docker-compose build
