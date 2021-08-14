@@ -1,0 +1,9 @@
+name: docker-build
+on: [push, pull_request]
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Docker Image
+        uses: actions/checkout@v2
+      - run: docker build . -t latest
