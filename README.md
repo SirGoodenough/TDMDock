@@ -11,6 +11,10 @@ This basically puts TDMGR from (https://github.com/jziolkowski/tdm) into a local
 
 ## Installation:
 
+* If you have docker already setup and wish to pull an image directly, this image is not available in the Docker Hub.  The image is available here using the path:
+ghcr.io/sirgoodenough/tdmdock:latest
+Point to that instead and it should pull from this repo.
+
 * First step is to install DockerCE and Docker Compose.  I'm not going to step by step that, rather refer you to other people that have covered that already.
 
 🐳 [Matheson Steplock: Install Docker on Ubuntu 20.04](https://mathesonsteplock.ca/install-docker-on-ubuntu-20-04/)
