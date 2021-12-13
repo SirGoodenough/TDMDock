@@ -11,7 +11,7 @@ This basically puts TDMGR from (https://github.com/jziolkowski/tdm) into a local
 
 ## Installation:
 
-* If you have docker already setup and wish to pull an image directly, this image is not available in the Docker Hub.  Point to that instead and it should pull from this repo.  The image is available here using the path:
+* If you have docker already setup and wish to pull an image directly, this image is not available in the Docker Hub.  Point to this instead and it should pull from this repo.  The image is available here using the path:
 
 > ghcr.io/sirgoodenough/tdmdock:latest
 
