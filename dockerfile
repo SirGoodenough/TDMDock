@@ -1,4 +1,4 @@
-FROM jlesage/baseimage-gui:debian-10
+FROM jlesage/baseimage-gui:debian-11
 
 RUN ln -s /usr/lib/x86_64-linux-gnu/libxcb-util.so.0.0.0 /usr/lib/x86_64-linux-gnu/libxcb-util.so.1
 
